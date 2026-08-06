@@ -1,0 +1,62 @@
+.simulator-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.simulator-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.simulator-section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.simulator-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.simulator-form-row {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.simulator-form-row .select {
+  flex: 1;
+}
+
+.simulator-result {
+  padding: var(--space-md);
+  background: var(--bg-input);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.simulator-result.success {
+  border-left: 3px solid var(--accent-green);
+}
+
+.simulator-result.error {
+  border-left: 3px solid var(--accent-red);
+  color: var(--accent-red);
+}
+
+.simulator-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: var(--space-sm) 0;
+}

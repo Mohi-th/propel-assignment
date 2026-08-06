@@ -1,0 +1,16 @@
+# Place this file at frontend/.dockerignore (context for the frontend service)
+
+.env
+.env.local
+.env.*.local
+
+node_modules
+dist
+
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+
+*.md

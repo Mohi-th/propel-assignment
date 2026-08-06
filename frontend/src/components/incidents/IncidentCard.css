@@ -1,0 +1,79 @@
+.incident-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  animation: fadeIn 0.3s ease-out;
+  margin-bottom: var(--space-sm);
+}
+
+.incident-card:hover {
+  border-color: var(--border-color-light);
+  background: var(--bg-card-hover);
+}
+
+.incident-card.selected {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-glow);
+}
+
+.incident-card.critical {
+  border-left: 3px solid var(--accent-red);
+}
+
+.incident-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+
+.incident-card-id {
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.incident-card-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.incident-card-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+}
+
+.incident-card-location {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.incident-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.incident-card-affected {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.incident-card .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-red);
+  animation: pulse-glow 2s infinite;
+}
